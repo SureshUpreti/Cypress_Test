@@ -6,7 +6,7 @@ describe('My First Test Suite', function(){
         cy.visit("https://rahulshettyacademy.com/seleniumPractise/#/")
         cy.get('.search-keyword').type('ca')
         cy.wait(2000)
-        cy.get('.product:visible').should('have.length', 4)
+        // cy.get('.product:visible').should('have.length', 4)
 
         //parent-child chaining(able to get only the required fields what we are lookin for instead of getting the fields from entire page )
         cy.get('.products').find('.product').should('have.length', 4)
